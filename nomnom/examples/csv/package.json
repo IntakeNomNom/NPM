@@ -1,0 +1,27 @@
+{
+	"name": "@intakenomnom/examples-csv",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/IntakeNomNom/nomnom/examples/csv.git"
+	},
+	"homepage": "https://github.com/IntakeNomNom/nomnom/examples/csv#readme",
+	"bugs": {
+		"url": "https://github.com/IntakeNomNom/nomnom/examples/csv/issues"
+	},
+	"author": "Nikola Hristov <nikola@playform.cloud>",
+	"private": true,
+	"license": "SEE LICENSE IN LICENSE",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "esbuild --format=esm --platform=node --target=node14 --sources-content=false --minify --outdir=dist src/index.ts && tsc"
+	},
+	"devDependencies": {
+		"@types/node": "18.6.2",
+		"esbuild": "0.14.51",
+		"typescript": "4.7.4"
+	}
+}
