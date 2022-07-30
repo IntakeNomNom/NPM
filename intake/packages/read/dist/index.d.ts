@@ -3,5 +3,5 @@
  * @param {string} file - string - The file path to the CSV file.
  * @returns An array of objects
  */
-declare const read: (file: string) => Promise<any>;
+declare const read: (file: string) => Promise<{}[]>;
 export default read;

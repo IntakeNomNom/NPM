@@ -12,10 +12,11 @@
 		"url": "https://github.com/IntakeNomNom/nomnom/examples/csv/issues"
 	},
 	"author": "Nikola Hristov <nikola@playform.cloud>",
-	"private": true,
 	"license": "SEE LICENSE IN LICENSE",
+	"private": true,
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
+	"keywords": [],
 	"scripts": {
 		"build": "esbuild --format=esm --platform=node --target=node14 --sources-content=false --minify --outdir=dist src/index.ts && tsc"
 	},
