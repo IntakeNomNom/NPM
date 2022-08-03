@@ -4,27 +4,40 @@ updates:
       directory: "/blu/"
       schedule:
           interval: "daily"
+      versioning-strategy: increase
+
     - package-ecosystem: "npm"
       directory: "/intake"
       schedule:
           interval: "daily"
+      versioning-strategy: increase
+
     - package-ecosystem: "npm"
       directory: "/intake/build"
       schedule:
           interval: "daily"
+      versioning-strategy: increase
+
     - package-ecosystem: "npm"
       directory: "/intake/parse"
       schedule:
           interval: "daily"
+      versioning-strategy: increase
+
     - package-ecosystem: "npm"
       directory: "/intake/read"
       schedule:
           interval: "daily"
+      versioning-strategy: increase
+
     - package-ecosystem: "npm"
       directory: "/nomnom"
       schedule:
           interval: "daily"
+      versioning-strategy: increase
+
     - package-ecosystem: "npm"
       directory: "/nomnom/examples/csv"
       schedule:
           interval: "daily"
+      versioning-strategy: increase
