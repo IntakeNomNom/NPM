@@ -1,1 +1,0 @@
-# IntakeNomNom renderer
