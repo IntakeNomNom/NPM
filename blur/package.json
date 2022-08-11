@@ -22,8 +22,8 @@
 	},
 	"devDependencies": {
 		"@intakenomnom/read": "0.0.1",
-		"@types/node": "18.6.5",
-		"esbuild": "0.15.0",
+		"@types/node": "18.7.1",
+		"esbuild": "0.15.1",
 		"typescript": "4.7.4"
 	}
 }
