@@ -139,6 +139,7 @@ var __generator =
 			return { value: op[0] ? op[1] : void 0, done: true };
 		}
 	};
+
 exports.__esModule = true;
 var read_1 = require("@intakenomnom/read");
 var nomnom = function (files) {
@@ -165,4 +166,5 @@ var nomnom = function (files) {
 		});
 	});
 };
+
 exports["default"] = nomnom;
