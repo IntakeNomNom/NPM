@@ -1,1 +1,1 @@
-import{nomnom as m}from"nomnom";m(["./data/samples.csv"]);
+import{nomnom as m}from"@intakenomnom/nomnom";m(["./data/samples.csv"]);
