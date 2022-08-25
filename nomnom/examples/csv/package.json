@@ -12,7 +12,7 @@
 		"url": "https://github.com/IntakeNomNom/nomnom/examples/csv/issues"
 	},
 	"author": "Nikola Hristov <nikola@playform.cloud>",
-	"license": "SEE LICENSE IN LICENSE",
+	"license": "MIT",
 	"private": true,
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
