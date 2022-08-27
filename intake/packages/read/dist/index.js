@@ -1,1 +1,1 @@
-import r from"@intakenomnom/parse";import s from"fs";const o=async a=>{const t=await s.promises.readFile(a,"utf8");return await r(t)};var n=o;export{n as default};
+import r from"fs";import s from"@intakenomnom/parse";const o=async a=>{const t=await r.promises.readFile(a,"utf8");return await s(t)};var n=o;export{n as default};

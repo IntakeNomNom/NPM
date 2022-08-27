@@ -1,5 +1,6 @@
-import parse from "@intakenomnom/parse";
 import fs from "fs";
+
+import parse from "@intakenomnom/parse";
 
 /**
  * It takes a file path as an argument, reads the file, parses the data, and returns the parsed data
