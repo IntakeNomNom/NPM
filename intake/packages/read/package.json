@@ -5,7 +5,7 @@
 	"description": "",
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/IntakeNomNom/npm.git"
+		"url": "https://github.com/IntakeNomNom/npm.git"
 	},
 	"homepage": "https://github.com/IntakeNomNom/npm#readme",
 	"bugs": {
@@ -23,7 +23,7 @@
 		"@intakenomnom/parse": "0.0.1"
 	},
 	"devDependencies": {
-		"@playform/config": "0.0.2",
-		"@playform/scripts": "0.0.4"
+		"@playform/config": "0.0.3",
+		"@playform/scripts": "0.0.5"
 	}
 }
