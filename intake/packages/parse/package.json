@@ -11,17 +11,17 @@
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/npm/issues"
 	},
-	"author": "Nikola Hristov <nikola@playform.cloud>",
+	"author": "Nikola Hristov <nikola@lightrix.dev>",
 	"license": "MIT",
 	"private": true,
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"build": "playform build src/index.ts"
+		"build": "lightrix build src/index.ts"
 	},
 	"devDependencies": {
-		"@playform/config": "0.0.3",
-		"@playform/scripts": "0.0.5"
+		"@lightrix/config": "0.0.1",
+		"@lightrix/scripts": "0.0.1"
 	},
 	"publishConfig": {
 		"access": "public"
