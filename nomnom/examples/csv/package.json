@@ -11,7 +11,7 @@
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/nomnom/examples/csv/issues"
 	},
-	"author": "Nikola Hristov <nikola@lightrix.dev>",
+	"author": "nikolarhristov",
 	"license": "MIT",
 	"private": true,
 	"main": "./dist/index.js",
