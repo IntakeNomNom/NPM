@@ -11,7 +11,7 @@
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/npm/issues"
 	},
-	"author": "nikolarhristov",
+	"author": "intakenomnom",
 	"license": "MIT",
 	"private": true,
 	"main": "./dist/index.js",
