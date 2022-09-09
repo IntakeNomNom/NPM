@@ -11,7 +11,11 @@
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/npm/issues"
 	},
-	"author": "nikolarhristov",
+	"author": {
+		"name": "Nikola Hristov",
+		"email": "nikola@lightrix.dev",
+		"url": "https://nikolahristov.tech"
+	},
 	"license": "MIT",
 	"private": true,
 	"bin": {
