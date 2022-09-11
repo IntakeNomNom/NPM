@@ -11,7 +11,7 @@
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/npm/issues"
 	},
-	"author": "lightrix",
+	"author": "intakenomnom",
 	"license": "MIT",
 	"private": true,
 	"main": "./dist/index.js",
