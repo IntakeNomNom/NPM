@@ -11,8 +11,6 @@
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/nomnom/examples/csv/issues"
 	},
-	"author": "intakenomnom",
-	"license": "MIT",
 	"private": true,
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
