@@ -25,13 +25,13 @@ updates:
       versioning-strategy: increase
 
     - package-ecosystem: "npm"
-      directory: "/intake/packages/parse"
+      directory: "/intake/packages/read"
       schedule:
           interval: "daily"
       versioning-strategy: increase
 
     - package-ecosystem: "npm"
-      directory: "/intake/packages/read"
+      directory: "/intake/packages/parse"
       schedule:
           interval: "daily"
       versioning-strategy: increase
