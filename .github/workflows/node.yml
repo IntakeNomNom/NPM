@@ -23,7 +23,6 @@ jobs:
                   run_install: false
             - run: |
                   echo "::set-output name=pnpm_cache_dir::$(pnpm store path)"
-
             - uses: actions/cache@v3
               with:
                   path: ${{ steps.pnpm-cache.outputs.pnpm_cache_dir }}
@@ -36,31 +35,25 @@ jobs:
 
             - run: pnpm install
               working-directory: /blur
-
-            - run: pnpm run build
+            - run: pnpm run build --if-present
               working-directory: /blur
             - run: pnpm install
               working-directory: /intake
-
-            - run: pnpm run build
+            - run: pnpm run build --if-present
               working-directory: /intake
             - run: pnpm install
               working-directory: /nomnom
-
-            - run: pnpm run build
+            - run: pnpm run build --if-present
               working-directory: /nomnom
             - run: pnpm install
               working-directory: /intake/packages/parse
-
-            - run: pnpm run build
+            - run: pnpm run build --if-present
               working-directory: /intake/packages/parse
             - run: pnpm install
               working-directory: /intake/packages/read
-
-            - run: pnpm run build
+            - run: pnpm run build --if-present
               working-directory: /intake/packages/read
             - run: pnpm install
               working-directory: /nomnom/examples/csv
-
-            - run: pnpm run build
+            - run: pnpm run build --if-present
               working-directory: /nomnom/examples/csv
