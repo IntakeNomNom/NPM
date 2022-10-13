@@ -31,7 +31,7 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  working-directory: ./blur
+                  dest: ./blur
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -58,7 +58,7 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  working-directory: ./intake
+                  dest: ./intake
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -85,7 +85,7 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  working-directory: ./nomnom
+                  dest: ./nomnom
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -112,7 +112,7 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  working-directory: ./intake/packages/parse
+                  dest: ./intake/packages/parse
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -139,7 +139,7 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  working-directory: ./intake/packages/read
+                  dest: ./intake/packages/read
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -166,7 +166,7 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  working-directory: ./nomnom/examples/csv
+                  dest: ./nomnom/examples/csv
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
