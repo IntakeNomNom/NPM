@@ -31,13 +31,12 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  dest: ./blur
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      ./blur/pnpm-lock.yaml
+                      **/pnpm-lock.yaml
                   working-directory: ./blur
             - run: pnpm install
               working-directory: ./blur
@@ -58,13 +57,12 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  dest: ./intake
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      ./intake/pnpm-lock.yaml
+                      **/pnpm-lock.yaml
                   working-directory: ./intake
             - run: pnpm install
               working-directory: ./intake
@@ -85,13 +83,12 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  dest: ./nomnom
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      ./nomnom/pnpm-lock.yaml
+                      **/pnpm-lock.yaml
                   working-directory: ./nomnom
             - run: pnpm install
               working-directory: ./nomnom
@@ -112,13 +109,12 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  dest: ./intake/packages/parse
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      ./intake/packages/parse/pnpm-lock.yaml
+                      **/pnpm-lock.yaml
                   working-directory: ./intake/packages/parse
             - run: pnpm install
               working-directory: ./intake/packages/parse
@@ -139,13 +135,12 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  dest: ./intake/packages/read
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      ./intake/packages/read/pnpm-lock.yaml
+                      **/pnpm-lock.yaml
                   working-directory: ./intake/packages/read
             - run: pnpm install
               working-directory: ./intake/packages/read
@@ -166,13 +161,12 @@ jobs:
                           --unsafe-perm=true,
                           --lockfile-only
                         ]
-                  dest: ./nomnom/examples/csv
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      ./nomnom/examples/csv/pnpm-lock.yaml
+                      **/pnpm-lock.yaml
                   working-directory: ./nomnom/examples/csv
             - run: pnpm install
               working-directory: ./nomnom/examples/csv
