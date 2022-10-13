@@ -35,31 +35,31 @@ jobs:
 
 
             - run: pnpm install
-              working-directory: /blur/
+              working-directory: ./blur
             - run: pnpm run build --if-present
-              working-directory: /blur/
+              working-directory: ./blur
 
             - run: pnpm install
-              working-directory: /intake/
+              working-directory: ./intake
             - run: pnpm run build --if-present
-              working-directory: /intake/
+              working-directory: ./intake
 
             - run: pnpm install
-              working-directory: /nomnom/
+              working-directory: ./nomnom
             - run: pnpm run build --if-present
-              working-directory: /nomnom/
+              working-directory: ./nomnom
 
             - run: pnpm install
-              working-directory: /intake/packages/parse/
+              working-directory: ./intake/packages/parse
             - run: pnpm run build --if-present
-              working-directory: /intake/packages/parse/
+              working-directory: ./intake/packages/parse
 
             - run: pnpm install
-              working-directory: /intake/packages/read/
+              working-directory: ./intake/packages/read
             - run: pnpm run build --if-present
-              working-directory: /intake/packages/read/
+              working-directory: ./intake/packages/read
 
             - run: pnpm install
-              working-directory: /nomnom/examples/csv/
+              working-directory: ./nomnom/examples/csv
             - run: pnpm run build --if-present
-              working-directory: /nomnom/examples/csv/
+              working-directory: ./nomnom/examples/csv
