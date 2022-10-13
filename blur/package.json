@@ -19,6 +19,6 @@
 	"devDependencies": {
 		"@intakenomnom/read": "0.0.1",
 		"@lightrix/config": "0.0.3",
-		"@lightrix/scripts": "0.0.3"
+		"@lightrix/scripts": "0.0.4"
 	}
 }
