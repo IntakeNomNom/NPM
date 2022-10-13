@@ -36,8 +36,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      **/pnpm-lock.yaml
-                  working-directory: ./blur
+                      ./blur/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./blur
             - run: pnpm run build
@@ -62,8 +61,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      **/pnpm-lock.yaml
-                  working-directory: ./intake
+                      ./intake/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake
             - run: pnpm run build
@@ -88,8 +86,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      **/pnpm-lock.yaml
-                  working-directory: ./nomnom
+                      ./nomnom/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./nomnom
             - run: pnpm run build
@@ -114,8 +111,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      **/pnpm-lock.yaml
-                  working-directory: ./intake/packages/parse
+                      ./intake/packages/parse/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake/packages/parse
             - run: pnpm run build
@@ -140,8 +136,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      **/pnpm-lock.yaml
-                  working-directory: ./intake/packages/read
+                      ./intake/packages/read/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake/packages/read
             - run: pnpm run build
@@ -166,8 +161,7 @@ jobs:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
                   cache-dependency-path: |
-                      **/pnpm-lock.yaml
-                  working-directory: ./nomnom/examples/csv
+                      ./nomnom/examples/csv/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./nomnom/examples/csv
             - run: pnpm run build
