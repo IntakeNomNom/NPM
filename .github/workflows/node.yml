@@ -20,7 +20,7 @@ jobs:
                         args: [ --shamefully-hoist=true, --child-concurrency=9999, --network-concurrency=9999, --prefer-frozen-lockfile=false, --strict-peer-dependencies=false, --unsafe-perm=true, --lockfile-only ]
 
 
-            - uses: actions/setup-node@v3.5.0
+            - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -33,7 +33,7 @@ jobs:
               working-directory: ./blur
 
 
-            - uses: actions/setup-node@v3.5.0
+            - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -46,7 +46,7 @@ jobs:
               working-directory: ./intake
 
 
-            - uses: actions/setup-node@v3.5.0
+            - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -59,7 +59,7 @@ jobs:
               working-directory: ./nomnom
 
 
-            - uses: actions/setup-node@v3.5.0
+            - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -72,7 +72,7 @@ jobs:
               working-directory: ./intake/packages/parse
 
 
-            - uses: actions/setup-node@v3.5.0
+            - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -85,7 +85,7 @@ jobs:
               working-directory: ./intake/packages/read
 
 
-            - uses: actions/setup-node@v3.5.0
+            - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
