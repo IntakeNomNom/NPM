@@ -30,6 +30,7 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
+                  check-latest: true
                   cache: "pnpm"
                   cache-dependency-path: './blur/pnpm-lock.yaml'
             - run: pnpm install
@@ -39,6 +40,7 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
+                  check-latest: true
                   cache: "pnpm"
                   cache-dependency-path: './intake/pnpm-lock.yaml'
             - run: pnpm install
@@ -48,6 +50,7 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
+                  check-latest: true
                   cache: "pnpm"
                   cache-dependency-path: './nomnom/pnpm-lock.yaml'
             - run: pnpm install
@@ -57,6 +60,7 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
+                  check-latest: true
                   cache: "pnpm"
                   cache-dependency-path: './intake/packages/parse/pnpm-lock.yaml'
             - run: pnpm install
@@ -66,6 +70,7 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
+                  check-latest: true
                   cache: "pnpm"
                   cache-dependency-path: './intake/packages/read/pnpm-lock.yaml'
             - run: pnpm install
@@ -75,6 +80,7 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
+                  check-latest: true
                   cache: "pnpm"
                   cache-dependency-path: './nomnom/examples/csv/pnpm-lock.yaml'
             - run: pnpm install
