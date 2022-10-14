@@ -17,12 +17,10 @@
 		"build": "lightrix build src/index.ts"
 	},
 	"devDependencies": {
+		"@lightrix/config": "0.0.3",
 		"@lightrix/scripts": "0.0.5"
 	},
 	"publishConfig": {
 		"access": "public"
-	},
-	"dependencies": {
-		"@lightrix/config": "workspace:0.0.3"
 	}
 }
