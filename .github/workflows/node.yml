@@ -7,29 +7,19 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-
         strategy:
             matrix:
-                node-version: [14.x, 16.x, 18.x]
-
+                node-version: [12.x 14.x, 16.x, 18.x]
         steps:
             - uses: actions/checkout@v3.1.0
-
-
             - uses: pnpm/action-setup@v2.2.3
               with:
                   version: 7.13.4
                   run_install: |
                       - recursive: true
-                        args: [
-                          --shamefully-hoist=true,
-                          --child-concurrency=9999,
-                          --network-concurrency=9999,
-                          --prefer-frozen-lockfile=false,
-                          --strict-peer-dependencies=false,
-                          --unsafe-perm=true,
-                          --lockfile-only
-                        ]
+                        args: [ --shamefully-hoist=true, --child-concurrency=9999, --network-concurrency=9999, --prefer-frozen-lockfile=false, --strict-peer-dependencies=false, --unsafe-perm=true, --lockfile-only ]
+
+
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -38,23 +28,11 @@ jobs:
             - run: pnpm install
               working-directory: ./blur
 
+
             - run: pnpm run build
               working-directory: ./blur
 
-            - uses: pnpm/action-setup@v2.2.3
-              with:
-                  version: 7.13.4
-                  run_install: |
-                      - recursive: true
-                        args: [
-                          --shamefully-hoist=true,
-                          --child-concurrency=9999,
-                          --network-concurrency=9999,
-                          --prefer-frozen-lockfile=false,
-                          --strict-peer-dependencies=false,
-                          --unsafe-perm=true,
-                          --lockfile-only
-                        ]
+
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -63,23 +41,11 @@ jobs:
             - run: pnpm install
               working-directory: ./intake
 
+
             - run: pnpm run build
               working-directory: ./intake
 
-            - uses: pnpm/action-setup@v2.2.3
-              with:
-                  version: 7.13.4
-                  run_install: |
-                      - recursive: true
-                        args: [
-                          --shamefully-hoist=true,
-                          --child-concurrency=9999,
-                          --network-concurrency=9999,
-                          --prefer-frozen-lockfile=false,
-                          --strict-peer-dependencies=false,
-                          --unsafe-perm=true,
-                          --lockfile-only
-                        ]
+
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -88,23 +54,11 @@ jobs:
             - run: pnpm install
               working-directory: ./nomnom
 
+
             - run: pnpm run build
               working-directory: ./nomnom
 
-            - uses: pnpm/action-setup@v2.2.3
-              with:
-                  version: 7.13.4
-                  run_install: |
-                      - recursive: true
-                        args: [
-                          --shamefully-hoist=true,
-                          --child-concurrency=9999,
-                          --network-concurrency=9999,
-                          --prefer-frozen-lockfile=false,
-                          --strict-peer-dependencies=false,
-                          --unsafe-perm=true,
-                          --lockfile-only
-                        ]
+
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -113,23 +67,11 @@ jobs:
             - run: pnpm install
               working-directory: ./intake/packages/parse
 
+
             - run: pnpm run build
               working-directory: ./intake/packages/parse
 
-            - uses: pnpm/action-setup@v2.2.3
-              with:
-                  version: 7.13.4
-                  run_install: |
-                      - recursive: true
-                        args: [
-                          --shamefully-hoist=true,
-                          --child-concurrency=9999,
-                          --network-concurrency=9999,
-                          --prefer-frozen-lockfile=false,
-                          --strict-peer-dependencies=false,
-                          --unsafe-perm=true,
-                          --lockfile-only
-                        ]
+
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -138,23 +80,11 @@ jobs:
             - run: pnpm install
               working-directory: ./intake/packages/read
 
+
             - run: pnpm run build
               working-directory: ./intake/packages/read
 
-            - uses: pnpm/action-setup@v2.2.3
-              with:
-                  version: 7.13.4
-                  run_install: |
-                      - recursive: true
-                        args: [
-                          --shamefully-hoist=true,
-                          --child-concurrency=9999,
-                          --network-concurrency=9999,
-                          --prefer-frozen-lockfile=false,
-                          --strict-peer-dependencies=false,
-                          --unsafe-perm=true,
-                          --lockfile-only
-                        ]
+
             - uses: actions/setup-node@v3.5.0
               with:
                   node-version: ${{ matrix.node-version }}
@@ -162,6 +92,7 @@ jobs:
                   cache-dependency-path: './nomnom/examples/csv/pnpm-lock.yaml'
             - run: pnpm install
               working-directory: ./nomnom/examples/csv
+
 
             - run: pnpm run build
               working-directory: ./nomnom/examples/csv
