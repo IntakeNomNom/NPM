@@ -18,10 +18,10 @@
 		"build": "lightrix build src/index.ts"
 	},
 	"dependencies": {
-		"@intakenomnom/parse": "0.0.1"
+		"@intakenomnom/parse": "0.0.1",
+		"@lightrix/config": "workspace:0.0.3"
 	},
 	"devDependencies": {
-		"@lightrix/config": "0.0.3",
 		"@lightrix/scripts": "0.0.5"
 	},
 	"publishConfig": {
