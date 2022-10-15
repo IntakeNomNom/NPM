@@ -19,20 +19,22 @@ jobs:
                   run_install: |
                       - recursive: true
                         args: [
-                          --shamefully-hoist=true,
                           --child-concurrency=9999,
+                          --link-workspace-packages=true,
+                          --lockfile-only,
                           --network-concurrency=9999,
                           --prefer-frozen-lockfile=false,
+                          --prefer-workspace-packages=true,
+                          --shamefully-hoist=true,
+                          --shared-workspace-lockfile=true,
                           --strict-peer-dependencies=false,
-                          --unsafe-perm=true,
-                          --lockfile-only
+                          --unsafe-perm=true
                         ]
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
-                  check-latest: true
                   cache: "pnpm"
-                  cache-dependency-path: './blur/pnpm-lock.yaml'
+                  cache-dependency-path: ./blur/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./blur
             - run: pnpm run build
@@ -40,9 +42,8 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
-                  check-latest: true
                   cache: "pnpm"
-                  cache-dependency-path: './intake/pnpm-lock.yaml'
+                  cache-dependency-path: ./intake/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake
             - run: pnpm run build
@@ -50,9 +51,8 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
-                  check-latest: true
                   cache: "pnpm"
-                  cache-dependency-path: './nomnom/pnpm-lock.yaml'
+                  cache-dependency-path: ./nomnom/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./nomnom
             - run: pnpm run build
@@ -60,9 +60,8 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
-                  check-latest: true
                   cache: "pnpm"
-                  cache-dependency-path: './intake/packages/parse/pnpm-lock.yaml'
+                  cache-dependency-path: ./intake/packages/parse/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake/packages/parse
             - run: pnpm run build
@@ -70,9 +69,8 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
-                  check-latest: true
                   cache: "pnpm"
-                  cache-dependency-path: './intake/packages/read/pnpm-lock.yaml'
+                  cache-dependency-path: ./intake/packages/read/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake/packages/read
             - run: pnpm run build
@@ -80,9 +78,8 @@ jobs:
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
-                  check-latest: true
                   cache: "pnpm"
-                  cache-dependency-path: './nomnom/examples/csv/pnpm-lock.yaml'
+                  cache-dependency-path: ./nomnom/examples/csv/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./nomnom/examples/csv
             - run: pnpm run build
