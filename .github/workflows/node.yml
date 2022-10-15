@@ -29,6 +29,7 @@ jobs:
                           --strict-peer-dependencies=false,
                           --unsafe-perm=true
                         ]
+
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
@@ -36,8 +37,10 @@ jobs:
                   cache-dependency-path: ./blur/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./blur
+
             - run: pnpm run build
               working-directory: ./blur
+
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
@@ -45,8 +48,10 @@ jobs:
                   cache-dependency-path: ./intake/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake
+
             - run: pnpm run build
               working-directory: ./intake
+
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
@@ -54,8 +59,10 @@ jobs:
                   cache-dependency-path: ./nomnom/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./nomnom
+
             - run: pnpm run build
               working-directory: ./nomnom
+
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
@@ -63,8 +70,10 @@ jobs:
                   cache-dependency-path: ./intake/packages/parse/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake/packages/parse
+
             - run: pnpm run build
               working-directory: ./intake/packages/parse
+
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
@@ -72,8 +81,10 @@ jobs:
                   cache-dependency-path: ./intake/packages/read/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake/packages/read
+
             - run: pnpm run build
               working-directory: ./intake/packages/read
+
             - uses: actions/setup-node@v3.5.1
               with:
                   node-version: ${{ matrix.node-version }}
@@ -81,5 +92,6 @@ jobs:
                   cache-dependency-path: ./nomnom/examples/csv/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./nomnom/examples/csv
+
             - run: pnpm run build
               working-directory: ./nomnom/examples/csv
