@@ -4,27 +4,38 @@ updates:
       directory: "/"
       schedule:
           interval: "daily"
+
     - package-ecosystem: "npm"
       directory: "/blur"
       schedule:
           interval: "daily"
-      versioning-strategy: increase    - package-ecosystem: "npm"
+      versioning-strategy: increase
+
+    - package-ecosystem: "npm"
       directory: "/intake"
       schedule:
           interval: "daily"
-      versioning-strategy: increase    - package-ecosystem: "npm"
+      versioning-strategy: increase
+
+    - package-ecosystem: "npm"
       directory: "/nomnom"
       schedule:
           interval: "daily"
-      versioning-strategy: increase    - package-ecosystem: "npm"
+      versioning-strategy: increase
+
+    - package-ecosystem: "npm"
       directory: "/intake/packages/parse"
       schedule:
           interval: "daily"
-      versioning-strategy: increase    - package-ecosystem: "npm"
+      versioning-strategy: increase
+
+    - package-ecosystem: "npm"
       directory: "/intake/packages/read"
       schedule:
           interval: "daily"
-      versioning-strategy: increase    - package-ecosystem: "npm"
+      versioning-strategy: increase
+
+    - package-ecosystem: "npm"
       directory: "/nomnom/examples/csv"
       schedule:
           interval: "daily"
