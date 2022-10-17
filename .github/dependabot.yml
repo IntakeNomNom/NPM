@@ -24,6 +24,12 @@ updates:
       versioning-strategy: increase
 
     - package-ecosystem: "npm"
+      directory: "/intake/packages/parse"
+      schedule:
+          interval: "daily"
+      versioning-strategy: increase
+
+    - package-ecosystem: "npm"
       directory: "/intake/packages/read"
       schedule:
           interval: "daily"
@@ -31,12 +37,6 @@ updates:
 
     - package-ecosystem: "npm"
       directory: "/nomnom/examples/csv"
-      schedule:
-          interval: "daily"
-      versioning-strategy: increase
-
-    - package-ecosystem: "npm"
-      directory: "/intake/packages/parse"
       schedule:
           interval: "daily"
       versioning-strategy: increase
