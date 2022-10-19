@@ -1,2 +1,1 @@
-const t=async()=>{};var a=t;export { a as default };
-
+const t=async()=>{};var a=t;export{a as default};
