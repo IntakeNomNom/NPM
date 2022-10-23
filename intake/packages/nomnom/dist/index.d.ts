@@ -1,2 +1,2 @@
-declare const nomnom: (files: string[]) => Promise<any[]>;
+declare const nomnom: (files: string[]) => Promise<{}[][]>;
 export default nomnom;
