@@ -6,6 +6,7 @@ on:
         branches: [main]
     pull_request:
         branches: [main]
+    workflow_call:
 
 jobs:
     build:
@@ -42,6 +43,10 @@ jobs:
 
             - run: pnpm run build
               working-directory: ./blur
+            - uses: actions/upload-artifact@v3.1.1
+              with:
+                  name: node-${{ matrix.node-version }}-dist-./blur
+                  path: ./blur/dist
 
             - uses: actions/setup-node@v3.5.1
               with:
@@ -53,6 +58,10 @@ jobs:
 
             - run: pnpm run build
               working-directory: ./intake
+            - uses: actions/upload-artifact@v3.1.1
+              with:
+                  name: node-${{ matrix.node-version }}-dist-./intake
+                  path: ./intake/dist
 
             - uses: actions/setup-node@v3.5.1
               with:
@@ -64,6 +73,10 @@ jobs:
 
             - run: pnpm run build
               working-directory: ./intake/packages/nomnom
+            - uses: actions/upload-artifact@v3.1.1
+              with:
+                  name: node-${{ matrix.node-version }}-dist-./intake/packages/nomnom
+                  path: ./intake/packages/nomnom/dist
 
             - uses: actions/setup-node@v3.5.1
               with:
@@ -75,6 +88,10 @@ jobs:
 
             - run: pnpm run build
               working-directory: ./intake/packages/parse
+            - uses: actions/upload-artifact@v3.1.1
+              with:
+                  name: node-${{ matrix.node-version }}-dist-./intake/packages/parse
+                  path: ./intake/packages/parse/dist
 
             - uses: actions/setup-node@v3.5.1
               with:
@@ -86,6 +103,10 @@ jobs:
 
             - run: pnpm run build
               working-directory: ./intake/packages/read
+            - uses: actions/upload-artifact@v3.1.1
+              with:
+                  name: node-${{ matrix.node-version }}-dist-./intake/packages/read
+                  path: ./intake/packages/read/dist
 
             - uses: actions/setup-node@v3.5.1
               with:
@@ -97,3 +118,7 @@ jobs:
 
             - run: pnpm run build
               working-directory: ./nomnom/examples/csv
+            - uses: actions/upload-artifact@v3.1.1
+              with:
+                  name: node-${{ matrix.node-version }}-dist-./nomnom/examples/csv
+                  path: ./nomnom/examples/csv/dist
