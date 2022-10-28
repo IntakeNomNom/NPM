@@ -1,28 +1,28 @@
 {
-  "name": "@intakenomnom/examples-csv",
-  "version": "0.0.1",
-  "type": "module",
-  "description": "",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/IntakeNomNom/nomnom/examples/csv.git"
-  },
-  "homepage": "https://github.com/IntakeNomNom/nomnom/examples/csv#readme",
-  "bugs": {
-    "url": "https://github.com/IntakeNomNom/nomnom/examples/csv/issues"
-  },
-  "private": true,
-  "main": "./dist/index.js",
-  "types": "./dist/index.d.ts",
-  "scripts": {
-    "build": "lightrix build src/index.ts"
-  },
-  "devDependencies": {
-    "@intakenomnom/nomnom": "0.0.1",
-    "@lightrix/config": "0.0.6",
-    "@lightrix/scripts": "0.0.13"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@intakenomnom/examples-csv",
+	"version": "0.0.1",
+	"type": "module",
+	"description": "",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/IntakeNomNom/nomnom/examples/csv.git"
+	},
+	"homepage": "https://github.com/IntakeNomNom/nomnom/examples/csv#readme",
+	"bugs": {
+		"url": "https://github.com/IntakeNomNom/nomnom/examples/csv/issues"
+	},
+	"private": true,
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "lightrix build src/index.ts"
+	},
+	"devDependencies": {
+		"@intakenomnom/nomnom": "0.0.1",
+		"@lightrix/config": "0.0.6",
+		"@lightrix/scripts": "0.0.13"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

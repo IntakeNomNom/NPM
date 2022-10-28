@@ -45,7 +45,7 @@ jobs:
               working-directory: ./blur
             - uses: actions/upload-artifact@v3.1.1
               with:
-                  name: -blur-node-${{ matrix.node-version }}-dist
+                  name: .-blur-node-${{ matrix.node-version }}-dist
                   path: ./blur/dist
 
             - uses: actions/setup-node@v3.5.1
@@ -60,7 +60,7 @@ jobs:
               working-directory: ./intake
             - uses: actions/upload-artifact@v3.1.1
               with:
-                  name: -intake-node-${{ matrix.node-version }}-dist
+                  name: .-intake-node-${{ matrix.node-version }}-dist
                   path: ./intake/dist
 
             - uses: actions/setup-node@v3.5.1
@@ -75,7 +75,7 @@ jobs:
               working-directory: ./intake/packages/nomnom
             - uses: actions/upload-artifact@v3.1.1
               with:
-                  name: -intake-packages-nomnom-node-${{ matrix.node-version }}-dist
+                  name: .-intake-packages-nomnom-node-${{ matrix.node-version }}-dist
                   path: ./intake/packages/nomnom/dist
 
             - uses: actions/setup-node@v3.5.1
@@ -90,7 +90,7 @@ jobs:
               working-directory: ./intake/packages/parse
             - uses: actions/upload-artifact@v3.1.1
               with:
-                  name: -intake-packages-parse-node-${{ matrix.node-version }}-dist
+                  name: .-intake-packages-parse-node-${{ matrix.node-version }}-dist
                   path: ./intake/packages/parse/dist
 
             - uses: actions/setup-node@v3.5.1
@@ -105,7 +105,7 @@ jobs:
               working-directory: ./intake/packages/read
             - uses: actions/upload-artifact@v3.1.1
               with:
-                  name: -intake-packages-read-node-${{ matrix.node-version }}-dist
+                  name: .-intake-packages-read-node-${{ matrix.node-version }}-dist
                   path: ./intake/packages/read/dist
 
             - uses: actions/setup-node@v3.5.1
@@ -120,5 +120,5 @@ jobs:
               working-directory: ./nomnom/examples/csv
             - uses: actions/upload-artifact@v3.1.1
               with:
-                  name: -nomnom-examples-csv-node-${{ matrix.node-version }}-dist
+                  name: .-nomnom-examples-csv-node-${{ matrix.node-version }}-dist
                   path: ./nomnom/examples/csv/dist
