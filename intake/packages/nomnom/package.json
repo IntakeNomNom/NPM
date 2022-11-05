@@ -15,7 +15,11 @@
 	"bin": {
 		"nomnom": "./dist/index.js"
 	},
+	"engines": {
+		"node": ">=14.21.0"
+	},
 	"main": "./dist/index.js",
+	"exports": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "lightrix build src/index.ts"
@@ -25,7 +29,7 @@
 	},
 	"devDependencies": {
 		"@lightrix/config": "0.0.6",
-		"@lightrix/scripts": "0.0.13"
+		"@lightrix/scripts": "0.0.14"
 	},
 	"publishConfig": {
 		"access": "public"
