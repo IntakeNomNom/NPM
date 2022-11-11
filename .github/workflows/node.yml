@@ -67,21 +67,6 @@ jobs:
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
-                  cache-dependency-path: ./intake/packages/parse/pnpm-lock.yaml
-            - run: pnpm install
-              working-directory: ./intake/packages/parse
-
-            - run: pnpm run build
-              working-directory: ./intake/packages/parse
-            - uses: actions/upload-artifact@v3.1.1
-              with:
-                  name: .-intake-packages-parse-node-${{ matrix.node-version }}-dist
-                  path: ./intake/packages/parse/dist
-
-            - uses: actions/setup-node@v3.5.1
-              with:
-                  node-version: ${{ matrix.node-version }}
-                  cache: "pnpm"
                   cache-dependency-path: ./intake/packages/nomnom/pnpm-lock.yaml
             - run: pnpm install
               working-directory: ./intake/packages/nomnom
@@ -92,6 +77,21 @@ jobs:
               with:
                   name: .-intake-packages-nomnom-node-${{ matrix.node-version }}-dist
                   path: ./intake/packages/nomnom/dist
+
+            - uses: actions/setup-node@v3.5.1
+              with:
+                  node-version: ${{ matrix.node-version }}
+                  cache: "pnpm"
+                  cache-dependency-path: ./intake/packages/parse/pnpm-lock.yaml
+            - run: pnpm install
+              working-directory: ./intake/packages/parse
+
+            - run: pnpm run build
+              working-directory: ./intake/packages/parse
+            - uses: actions/upload-artifact@v3.1.1
+              with:
+                  name: .-intake-packages-parse-node-${{ matrix.node-version }}-dist
+                  path: ./intake/packages/parse/dist
 
             - uses: actions/setup-node@v3.5.1
               with:

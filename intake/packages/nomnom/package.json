@@ -3,6 +3,7 @@
 	"version": "0.0.1",
 	"type": "module",
 	"description": "",
+	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/IntakeNomNom/npm.git"
@@ -15,11 +16,7 @@
 	"bin": {
 		"nomnom": "./dist/index.js"
 	},
-	"engines": {
-		"node": ">=14.21.0"
-	},
 	"main": "./dist/index.js",
-	"exports": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
 		"build": "lightrix build src/index.ts"
@@ -32,6 +29,6 @@
 		"@lightrix/scripts": "0.0.14"
 	},
 	"publishConfig": {
-		"access": "public"
+		"access": "restricted"
 	}
 }
