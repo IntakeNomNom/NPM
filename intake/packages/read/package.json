@@ -3,7 +3,6 @@
 	"version": "0.0.1",
 	"type": "module",
 	"description": "",
-	"license": "MIT",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/IntakeNomNom/npm.git"
@@ -12,6 +11,7 @@
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/npm/issues"
 	},
+	"license": "MIT",
 	"private": true,
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
