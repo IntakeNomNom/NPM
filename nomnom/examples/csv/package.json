@@ -21,7 +21,7 @@
 	"devDependencies": {
 		"@intakenomnom/nomnom": "0.0.1",
 		"@lightrix/config": "0.0.6",
-		"@lightrix/scripts": "0.0.14"
+		"@lightrix/scripts": "0.0.15"
 	},
 	"publishConfig": {
 		"access": "restricted"
