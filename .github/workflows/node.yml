@@ -13,7 +13,7 @@ on:
     workflow_call:
 
 jobs:
-    install:
+    node:
         runs-on: ubuntu-latest
         strategy:
             matrix:
@@ -45,15 +45,9 @@ jobs:
             - run: pnpm install
               working-directory: ./blur
 
-    build:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node-version: [14, 16, 18]
-        needs: install
-        steps:
             - run: pnpm run build
               working-directory: ./blur
+
             - uses: actions/upload-artifact@v3.1.1
               with:
                   name: .-blur-node-${{ matrix.node-version }}-dist
@@ -67,15 +61,9 @@ jobs:
             - run: pnpm install
               working-directory: ./intake
 
-    build:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node-version: [14, 16, 18]
-        needs: install
-        steps:
             - run: pnpm run build
               working-directory: ./intake
+
             - uses: actions/upload-artifact@v3.1.1
               with:
                   name: .-intake-node-${{ matrix.node-version }}-dist
@@ -89,15 +77,9 @@ jobs:
             - run: pnpm install
               working-directory: ./intake/packages/nomnom
 
-    build:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node-version: [14, 16, 18]
-        needs: install
-        steps:
             - run: pnpm run build
               working-directory: ./intake/packages/nomnom
+
             - uses: actions/upload-artifact@v3.1.1
               with:
                   name: .-intake-packages-nomnom-node-${{ matrix.node-version }}-dist
@@ -111,15 +93,9 @@ jobs:
             - run: pnpm install
               working-directory: ./intake/packages/parse
 
-    build:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node-version: [14, 16, 18]
-        needs: install
-        steps:
             - run: pnpm run build
               working-directory: ./intake/packages/parse
+
             - uses: actions/upload-artifact@v3.1.1
               with:
                   name: .-intake-packages-parse-node-${{ matrix.node-version }}-dist
@@ -133,15 +109,9 @@ jobs:
             - run: pnpm install
               working-directory: ./intake/packages/read
 
-    build:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node-version: [14, 16, 18]
-        needs: install
-        steps:
             - run: pnpm run build
               working-directory: ./intake/packages/read
+
             - uses: actions/upload-artifact@v3.1.1
               with:
                   name: .-intake-packages-read-node-${{ matrix.node-version }}-dist
@@ -155,15 +125,9 @@ jobs:
             - run: pnpm install
               working-directory: ./nomnom/examples/csv
 
-    build:
-        runs-on: ubuntu-latest
-        strategy:
-            matrix:
-                node-version: [14, 16, 18]
-        needs: install
-        steps:
             - run: pnpm run build
               working-directory: ./nomnom/examples/csv
+
             - uses: actions/upload-artifact@v3.1.1
               with:
                   name: .-nomnom-examples-csv-node-${{ matrix.node-version }}-dist
