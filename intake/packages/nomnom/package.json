@@ -25,8 +25,8 @@
 		"@intakenomnom/read": "0.0.1"
 	},
 	"devDependencies": {
-		"@lightrix/config": "0.0.6",
-		"@lightrix/scripts": "0.1.1"
+		"@lightrix/config": "0.0.7",
+		"@lightrix/scripts": "0.1.2"
 	},
 	"publishConfig": {
 		"access": "restricted"
