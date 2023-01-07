@@ -82,7 +82,7 @@ jobs:
             - run: pnpm run build
               working-directory: ./blur
 
-            - uses: actions/upload-artifact@v3.1.1
+            - uses: actions/upload-artifact@v3.1.2
               with:
                   name: .-blur-node-${{ matrix.node-version }}-dist
                   path: ./blur/dist
@@ -98,7 +98,7 @@ jobs:
             - run: pnpm run build
               working-directory: ./intake
 
-            - uses: actions/upload-artifact@v3.1.1
+            - uses: actions/upload-artifact@v3.1.2
               with:
                   name: .-intake-node-${{ matrix.node-version }}-dist
                   path: ./intake/dist
@@ -114,7 +114,7 @@ jobs:
             - run: pnpm run build
               working-directory: ./intake/packages/nomnom
 
-            - uses: actions/upload-artifact@v3.1.1
+            - uses: actions/upload-artifact@v3.1.2
               with:
                   name: .-intake-packages-nomnom-node-${{ matrix.node-version }}-dist
                   path: ./intake/packages/nomnom/dist
@@ -130,7 +130,7 @@ jobs:
             - run: pnpm run build
               working-directory: ./intake/packages/parse
 
-            - uses: actions/upload-artifact@v3.1.1
+            - uses: actions/upload-artifact@v3.1.2
               with:
                   name: .-intake-packages-parse-node-${{ matrix.node-version }}-dist
                   path: ./intake/packages/parse/dist
@@ -146,7 +146,7 @@ jobs:
             - run: pnpm run build
               working-directory: ./intake/packages/read
 
-            - uses: actions/upload-artifact@v3.1.1
+            - uses: actions/upload-artifact@v3.1.2
               with:
                   name: .-intake-packages-read-node-${{ matrix.node-version }}-dist
                   path: ./intake/packages/read/dist
@@ -162,7 +162,7 @@ jobs:
             - run: pnpm run build
               working-directory: ./nomnom/examples/csv
 
-            - uses: actions/upload-artifact@v3.1.1
+            - uses: actions/upload-artifact@v3.1.2
               with:
                   name: .-nomnom-examples-csv-node-${{ matrix.node-version }}-dist
                   path: ./nomnom/examples/csv/dist
