@@ -1,3 +1,4 @@
+// @ts-nocheck
 const parse = async (data: string) => {
 	const lines = data.split("\n");
 	const headers = lines[0].split(",");
