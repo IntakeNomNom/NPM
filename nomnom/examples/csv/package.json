@@ -2,7 +2,6 @@
 	"name": "@intakenomnom/examples-csv",
 	"version": "0.0.1",
 	"type": "module",
-	"description": "",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/IntakeNomNom/nomnom/examples/csv.git"

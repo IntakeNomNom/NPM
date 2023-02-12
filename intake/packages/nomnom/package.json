@@ -2,7 +2,6 @@
 	"name": "@intakenomnom/nomnom",
 	"version": "0.0.1",
 	"type": "module",
-	"description": "",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/IntakeNomNom/npm.git"
