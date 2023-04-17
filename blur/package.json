@@ -19,8 +19,8 @@
 	},
 	"devDependencies": {
 		"@intakenomnom/read": "0.0.1",
-		"@lightrix/config": "0.0.8",
-		"@lightrix/scripts": "0.1.6"
+		"@lightrix/config": "0.0.9",
+		"@lightrix/scripts": "0.1.7"
 	},
 	"publishConfig": {
 		"access": "restricted"

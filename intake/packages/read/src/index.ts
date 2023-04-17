@@ -1,5 +1,4 @@
 import * as fs from "fs";
-
 import parse from "@intakenomnom/parse";
 
 export default async (file: string) => {
