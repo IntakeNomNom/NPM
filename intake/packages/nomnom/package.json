@@ -13,7 +13,7 @@
 	"license": "MIT",
 	"private": true,
 	"bin": {
-		"nomnom": "./dist/index.js"
+		"nomnom": "./dist/bin.js"
 	},
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
