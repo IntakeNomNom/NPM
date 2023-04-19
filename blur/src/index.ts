@@ -1,3 +1,1 @@
-const blur = async () => {};
-
-export default blur;
+export default async () => {};

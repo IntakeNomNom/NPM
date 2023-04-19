@@ -1,2 +1,2 @@
-declare const parse: (data: string) => Promise<{}[]>;
-export default parse;
+declare const _default: (data: string) => Promise<{}[]>;
+export default _default;

@@ -1,2 +1,2 @@
-declare const intake: () => Promise<void>;
-export default intake;
+declare const _default: () => Promise<void>;
+export default _default;

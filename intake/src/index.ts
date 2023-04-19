@@ -1,3 +1,1 @@
-const intake = async () => {};
-
-export default intake;
+export default async () => {};
