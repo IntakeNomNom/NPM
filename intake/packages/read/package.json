@@ -15,14 +15,12 @@
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"build": "lightrix build 'src/**/*.ts'"
+		"prepublishOnly": "lightrix build 'src/**/*.ts'"
 	},
 	"dependencies": {
-		"@intakenomnom/parse": "0.0.1"
-	},
-	"devDependencies": {
-		"@lightrix/config": "0.0.9",
-		"@lightrix/scripts": "1.0.0"
+		"@intakenomnom/parse": "0.0.1",
+		"@lightrix/config": "0.0.11",
+		"@lightrix/scripts": "1.0.2"
 	},
 	"publishConfig": {
 		"access": "restricted"
