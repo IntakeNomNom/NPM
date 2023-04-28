@@ -116,7 +116,9 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-intake-packages-nomnom-node-${{ matrix.node-version }}-dist
+                  name:
+                      .-intake-packages-nomnom-node-${{ matrix.node-version
+                      }}-dist
                   path: ./intake/packages/nomnom/dist
 
             - uses: actions/setup-node@v3.6.0
@@ -132,7 +134,9 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-intake-packages-parse-node-${{ matrix.node-version }}-dist
+                  name:
+                      .-intake-packages-parse-node-${{ matrix.node-version
+                      }}-dist
                   path: ./intake/packages/parse/dist
 
             - uses: actions/setup-node@v3.6.0
@@ -148,7 +152,9 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-intake-packages-read-node-${{ matrix.node-version }}-dist
+                  name:
+                      .-intake-packages-read-node-${{ matrix.node-version
+                      }}-dist
                   path: ./intake/packages/read/dist
 
             - uses: actions/setup-node@v3.6.0
@@ -164,5 +170,6 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-nomnom-examples-csv-node-${{ matrix.node-version }}-dist
+                  name:
+                      .-nomnom-examples-csv-node-${{ matrix.node-version }}-dist
                   path: ./nomnom/examples/csv/dist
