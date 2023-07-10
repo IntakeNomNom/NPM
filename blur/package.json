@@ -1,28 +1,28 @@
 {
+	"name": "blur",
+	"version": "1.0.5",
+	"private": true,
+	"homepage": "https://github.com/IntakeNomNom/npm#readme",
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/npm/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/IntakeNomNom/npm.git"
+	},
+	"license": "MIT",
+	"type": "module",
+	"main": "./dist/index.js",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"prepublishOnly": "lightrix build 'src/**/*.ts'"
 	},
 	"devDependencies": {
 		"@intakenomnom/read": "0.0.1",
 		"@lightrix/config": "0.0.11",
 		"@lightrix/scripts": "1.0.6"
 	},
-	"homepage": "https://github.com/IntakeNomNom/npm#readme",
-	"license": "MIT",
-	"main": "./dist/index.js",
-	"name": "blur",
-	"private": true,
 	"publishConfig": {
 		"access": "restricted"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/IntakeNomNom/npm.git"
-	},
-	"scripts": {
-		"prepublishOnly": "lightrix build 'src/**/*.ts'"
-	},
-	"type": "module",
-	"types": "./dist/index.d.ts",
-	"version": "1.0.5"
+	}
 }
