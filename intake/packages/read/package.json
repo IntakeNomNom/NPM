@@ -15,7 +15,7 @@
 	"main": "./dist/Index.js",
 	"types": "./dist/Index.d.ts",
 	"scripts": {
-		"prepublishOnly": "lightrix build 'src/**/*.ts'"
+		"prepublishOnly": "lightrix build 'Source/**/*.ts'"
 	},
 	"dependencies": {
 		"@intakenomnom/parse": "0.0.1"
