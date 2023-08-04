@@ -12,10 +12,10 @@
 	},
 	"license": "MIT",
 	"type": "module",
-	"main": "./dist/Index.js",
-	"types": "./dist/Index.d.ts",
+	"main": "./Target/Index.js",
+	"types": "./Target/Index.d.ts",
 	"bin": {
-		"nomnom": "./dist/bin.js"
+		"nomnom": "./Target/bin.js"
 	},
 	"scripts": {
 		"prepublishOnly": "lightrix build 'Source/**/*.ts'"
