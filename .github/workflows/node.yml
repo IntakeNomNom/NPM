@@ -85,8 +85,8 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-blur-node-${{ matrix.node-version }}-dist
-                  path: ./blur/dist
+                  name: .-blur-node-${{ matrix.node-version }}-Target
+                  path: ./blur/Target
 
             - uses: actions/setup-node@v3.7.0
               with:
@@ -101,8 +101,8 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-intake-node-${{ matrix.node-version }}-dist
-                  path: ./intake/dist
+                  name: .-intake-node-${{ matrix.node-version }}-Target
+                  path: ./intake/Target
 
             - uses: actions/setup-node@v3.7.0
               with:
@@ -117,8 +117,8 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-intake-packages-nomnom-node-${{ matrix.node-version }}-dist
-                  path: ./intake/packages/nomnom/dist
+                  name: .-intake-packages-nomnom-node-${{ matrix.node-version }}-Target
+                  path: ./intake/packages/nomnom/Target
 
             - uses: actions/setup-node@v3.7.0
               with:
@@ -133,8 +133,8 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-intake-packages-parse-node-${{ matrix.node-version }}-dist
-                  path: ./intake/packages/parse/dist
+                  name: .-intake-packages-parse-node-${{ matrix.node-version }}-Target
+                  path: ./intake/packages/parse/Target
 
             - uses: actions/setup-node@v3.7.0
               with:
@@ -149,8 +149,8 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-intake-packages-read-node-${{ matrix.node-version }}-dist
-                  path: ./intake/packages/read/dist
+                  name: .-intake-packages-read-node-${{ matrix.node-version }}-Target
+                  path: ./intake/packages/read/Target
 
             - uses: actions/setup-node@v3.7.0
               with:
@@ -165,5 +165,5 @@ jobs:
 
             - uses: actions/upload-artifact@v3.1.2
               with:
-                  name: .-nomnom-examples-csv-node-${{ matrix.node-version }}-dist
-                  path: ./nomnom/examples/csv/dist
+                  name: .-nomnom-examples-csv-node-${{ matrix.node-version }}-Target
+                  path: ./nomnom/examples/csv/Target
