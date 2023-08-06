@@ -19,7 +19,7 @@
 	},
 	"dependencies": {
 		"@lightrix/configuration": "0.0.1",
-		"@lightrix/script": "1.0.7"
+		"@lightrix/script": "0.0.1"
 	},
 	"devDependencies": {
 		"@intakenomnom/nomnom": "0.0.1"
