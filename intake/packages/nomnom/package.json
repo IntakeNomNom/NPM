@@ -18,7 +18,7 @@
 		"nomnom": "./Target/bin.js"
 	},
 	"scripts": {
-		"prepublishOnly": "lightrix build 'Source/**/*.ts'"
+		"prepublishOnly": "Lightrix build 'Source/**/*.ts'"
 	},
 	"dependencies": {
 		"@intakenomnom/read": "0.0.1"
