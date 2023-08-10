@@ -1,7 +1,6 @@
 {
 	"name": "@intakenomnom/parse",
 	"version": "2.0.0",
-	"private": true,
 	"homepage": "https://github.com/IntakeNomNom/npm#readme",
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/npm/issues"
@@ -10,7 +9,6 @@
 		"type": "git",
 		"url": "git+https://github.com/IntakeNomNom/npm.git"
 	},
-	"license": "MIT",
 	"type": "module",
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
@@ -20,8 +18,5 @@
 	"devDependencies": {
 		"@lightrix/configuration": "0.0.1",
 		"@lightrix/script": "0.0.1"
-	},
-	"publishConfig": {
-		"access": "restricted"
 	}
 }
