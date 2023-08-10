@@ -16,7 +16,6 @@
 		"prepublishOnly": "Lightrix build 'Source/**/*.ts'"
 	},
 	"devDependencies": {
-		"@lightrix/configuration": "0.0.1",
 		"@lightrix/script": "0.0.1"
 	}
 }

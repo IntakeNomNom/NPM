@@ -19,7 +19,6 @@
 		"@intakenomnom/parse": "0.0.1"
 	},
 	"devDependencies": {
-		"@lightrix/configuration": "0.0.1",
 		"@lightrix/script": "0.0.1"
 	}
 }
