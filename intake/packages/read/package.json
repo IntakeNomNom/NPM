@@ -19,6 +19,6 @@
 		"@intakenomnom/parse": "0.0.1"
 	},
 	"devDependencies": {
-		"@lightrix/script": "0.0.1"
+		"typescript-esbuild": "0.1.13"
 	}
 }

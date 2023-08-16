@@ -13,15 +13,12 @@
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
 	"bin": {
-		"nomnom": "./Target/bin.js"
+		"nomnom": "Target/Bin.js"
 	},
 	"scripts": {
 		"prepublishOnly": "Lightrix build 'Source/**/*.ts'"
 	},
-	"dependencies": {
-		"@intakenomnom/read": "0.0.1"
-	},
 	"devDependencies": {
-		"@lightrix/script": "0.0.1"
+		"typescript-esbuild": "0.1.13"
 	}
 }

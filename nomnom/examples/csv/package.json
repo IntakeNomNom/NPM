@@ -16,7 +16,7 @@
 		"prepublishOnly": "Lightrix build 'Source/**/*.ts'"
 	},
 	"dependencies": {
-		"@lightrix/script": "0.0.1"
+		"typescript-esbuild": "0.1.13"
 	},
 	"devDependencies": {
 		"@intakenomnom/nomnom": "0.0.1"
