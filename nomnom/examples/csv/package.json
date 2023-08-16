@@ -9,6 +9,7 @@
 		"type": "git",
 		"url": "git+https://github.com/IntakeNomNom/nomnom/examples/csv.git"
 	},
+	"license": "MIT",
 	"type": "module",
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
