@@ -1,7 +1,7 @@
 {
 	"name": "intake",
 	"version": "0.3.0",
-	"private": "false",
+	"private": false,
 	"homepage": "https://github.com/IntakeNomNom/npm#readme",
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/npm/issues"

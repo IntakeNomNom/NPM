@@ -1,7 +1,7 @@
 {
 	"name": "blur",
 	"version": "1.0.5",
-	"private": "false",
+	"private": false,
 	"homepage": "https://github.com/IntakeNomNom/npm#readme",
 	"bugs": {
 		"url": "https://github.com/IntakeNomNom/npm/issues"
