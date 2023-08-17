@@ -72,7 +72,7 @@ jobs:
                           --unsafe-perm=true
                         ]
 
-            - uses: actions/setup-node@v3.7.0
+            - uses: actions/setup-node@v3.8.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -88,7 +88,7 @@ jobs:
                   name: .-blur-node-${{ matrix.node-version }}-Target
                   path: ./blur/Target
 
-            - uses: actions/setup-node@v3.7.0
+            - uses: actions/setup-node@v3.8.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -104,7 +104,7 @@ jobs:
                   name: .-intake-node-${{ matrix.node-version }}-Target
                   path: ./intake/Target
 
-            - uses: actions/setup-node@v3.7.0
+            - uses: actions/setup-node@v3.8.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -120,7 +120,7 @@ jobs:
                   name: .-intake-packages-nomnom-node-${{ matrix.node-version }}-Target
                   path: ./intake/packages/nomnom/Target
 
-            - uses: actions/setup-node@v3.7.0
+            - uses: actions/setup-node@v3.8.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -136,7 +136,7 @@ jobs:
                   name: .-intake-packages-parse-node-${{ matrix.node-version }}-Target
                   path: ./intake/packages/parse/Target
 
-            - uses: actions/setup-node@v3.7.0
+            - uses: actions/setup-node@v3.8.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
@@ -152,7 +152,7 @@ jobs:
                   name: .-intake-packages-read-node-${{ matrix.node-version }}-Target
                   path: ./intake/packages/read/Target
 
-            - uses: actions/setup-node@v3.7.0
+            - uses: actions/setup-node@v3.8.0
               with:
                   node-version: ${{ matrix.node-version }}
                   cache: "pnpm"
