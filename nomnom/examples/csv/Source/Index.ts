@@ -1,3 +1,3 @@
-import nomnom from "@intakenomnom/nomnom";
-
-nomnom(["./data/samples.csv"]);
+export default (await import("@intakenomnom/nomnom")).default([
+	"./data/samples.csv",
+]);
