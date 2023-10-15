@@ -1,1 +1,1 @@
-import a from"@intakenomnom/read";var i=async t=>await Promise.all(Array.from(t).filter(r=>r.endsWith(".csv")).map(r=>a(r)));export{i as default};
+var r=async t=>await Promise.all(Array.from(t).filter(a=>a.endsWith(".csv")).map(async a=>(await import("@intakenomnom/read")).default(a)));export{r as default};

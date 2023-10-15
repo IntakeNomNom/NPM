@@ -1,1 +1,1 @@
-import m from"@intakenomnom/nomnom";m(["./data/samples.csv"]);
+var a=(await import("@intakenomnom/nomnom")).default(["./data/samples.csv"]);export{a as default};
