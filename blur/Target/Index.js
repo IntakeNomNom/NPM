@@ -1,2 +1,1 @@
-var a = async () => {};
-export { a as default };
+var a=async()=>{};export{a as default};
