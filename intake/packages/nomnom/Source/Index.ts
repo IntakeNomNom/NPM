@@ -3,6 +3,6 @@ export default async (files: string[] | Set<string>) =>
 		Array.from(files)
 			.filter((file) => file.endsWith(".csv"))
 			.map(async (file) =>
-				(await import("@intakenomnom/read")).default(file)
-			)
+				(await import("@intakenomnom/read")).default(file),
+			),
 	);
