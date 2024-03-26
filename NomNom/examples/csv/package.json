@@ -2,19 +2,19 @@
 	"name": "@intakenomnom/examples-csv",
 	"version": "0.0.1",
 	"private": false,
-	"homepage": "HTTPS://GitHub.Com/IntakeNomNom/nomnom/examples/csv#readme",
+	"homepage": "https://github.com/IntakeNomNom/nomnom/examples/csv#readme",
 	"bugs": {
-		"url": "HTTPS://GitHub.Com/IntakeNomNom/nomnom/examples/csv/issues"
+		"url": "https://github.com/IntakeNomNom/nomnom/examples/csv/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+HTTPS://GitHub.Com/IntakeNomNom/nomnom/examples/csv.git"
+		"url": "git+https://github.com/IntakeNomNom/nomnom/examples/csv.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Nikola R. Hristov",
 		"email": "Nikola@Playform.Cloud",
-		"url": "HTTPS://NikolaHristov.Tech"
+		"url": "https://nikolahristov.tech"
 	},
 	"type": "module",
 	"main": "./Target/Index.js",

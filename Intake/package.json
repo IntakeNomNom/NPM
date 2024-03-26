@@ -2,19 +2,19 @@
 	"name": "intake",
 	"version": "0.3.0",
 	"private": false,
-	"homepage": "HTTPS://GitHub.Com/IntakeNomNom/NPM#readme",
+	"homepage": "https://github.com/IntakeNomNom/NPM#readme",
 	"bugs": {
-		"url": "HTTPS://GitHub.Com/IntakeNomNom/NPM/issues"
+		"url": "https://github.com/IntakeNomNom/NPM/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+HTTPS://GitHub.Com/IntakeNomNom/NPM.git"
+		"url": "git+https://github.com/IntakeNomNom/NPM.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Nikola R. Hristov",
 		"email": "Nikola@Playform.Cloud",
-		"url": "HTTPS://NikolaHristov.Tech"
+		"url": "https://nikolahristov.tech"
 	},
 	"type": "module",
 	"main": "./Target/Index.js",
