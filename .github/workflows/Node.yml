@@ -83,7 +83,7 @@ jobs:
             - run: pnpm install
               working-directory: ./Blur
 
-            - run: pnpm run prepublishOnly
+            - run: pnpm run Build
               working-directory: .
 
             - uses: actions/upload-artifact@v4.3.1
@@ -100,7 +100,7 @@ jobs:
             - run: pnpm install
               working-directory: ./Intake
 
-            - run: pnpm run prepublishOnly
+            - run: pnpm run Build
               working-directory: .
 
             - uses: actions/upload-artifact@v4.3.1
@@ -117,7 +117,7 @@ jobs:
             - run: pnpm install
               working-directory: ./Intake/packages/nomnom
 
-            - run: pnpm run prepublishOnly
+            - run: pnpm run Build
               working-directory: .
 
             - uses: actions/upload-artifact@v4.3.1
@@ -134,7 +134,7 @@ jobs:
             - run: pnpm install
               working-directory: ./Intake/packages/parse
 
-            - run: pnpm run prepublishOnly
+            - run: pnpm run Build
               working-directory: .
 
             - uses: actions/upload-artifact@v4.3.1
@@ -151,7 +151,7 @@ jobs:
             - run: pnpm install
               working-directory: ./Intake/packages/read
 
-            - run: pnpm run prepublishOnly
+            - run: pnpm run Build
               working-directory: .
 
             - uses: actions/upload-artifact@v4.3.1
@@ -168,7 +168,7 @@ jobs:
             - run: pnpm install
               working-directory: ./NomNom/examples/csv
 
-            - run: pnpm run prepublishOnly
+            - run: pnpm run Build
               working-directory: .
 
             - uses: actions/upload-artifact@v4.3.1
