@@ -8,7 +8,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/IntakeNomNom/nomnom/examples/csv.git"
+		"url": "git+HTTPS://github.com/IntakeNomNom/nomnom/examples/csv.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
