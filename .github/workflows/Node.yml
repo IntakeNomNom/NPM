@@ -57,7 +57,7 @@ jobs:
                 node-version: [18, 19, 20]
 
         steps:
-            - uses: actions/checkout@v4.1.2
+            - uses: actions/checkout@v4.1.4
 
             - uses: pnpm/action-setup@v3.0.0
               with:
@@ -86,7 +86,7 @@ jobs:
             - run: pnpm run prepublishOnly
               working-directory: .
 
-            - uses: actions/upload-artifact@v4.3.2
+            - uses: actions/upload-artifact@v4.3.3
               with:
                   name: .-Blur-Node-${{ matrix.node-version }}-Target
                   path: ./Blur/Target
@@ -103,7 +103,7 @@ jobs:
             - run: pnpm run prepublishOnly
               working-directory: .
 
-            - uses: actions/upload-artifact@v4.3.2
+            - uses: actions/upload-artifact@v4.3.3
               with:
                   name: .-Intake-Node-${{ matrix.node-version }}-Target
                   path: ./Intake/Target
@@ -120,7 +120,7 @@ jobs:
             - run: pnpm run prepublishOnly
               working-directory: .
 
-            - uses: actions/upload-artifact@v4.3.2
+            - uses: actions/upload-artifact@v4.3.3
               with:
                   name: .-Intake-packages-nomnom-Node-${{ matrix.node-version }}-Target
                   path: ./Intake/packages/nomnom/Target
@@ -137,7 +137,7 @@ jobs:
             - run: pnpm run prepublishOnly
               working-directory: .
 
-            - uses: actions/upload-artifact@v4.3.2
+            - uses: actions/upload-artifact@v4.3.3
               with:
                   name: .-Intake-packages-parse-Node-${{ matrix.node-version }}-Target
                   path: ./Intake/packages/parse/Target
@@ -154,7 +154,7 @@ jobs:
             - run: pnpm run prepublishOnly
               working-directory: .
 
-            - uses: actions/upload-artifact@v4.3.2
+            - uses: actions/upload-artifact@v4.3.3
               with:
                   name: .-Intake-packages-read-Node-${{ matrix.node-version }}-Target
                   path: ./Intake/packages/read/Target
@@ -171,7 +171,7 @@ jobs:
             - run: pnpm run prepublishOnly
               working-directory: .
 
-            - uses: actions/upload-artifact@v4.3.2
+            - uses: actions/upload-artifact@v4.3.3
               with:
                   name: .-NomNom-examples-csv-Node-${{ matrix.node-version }}-Target
                   path: ./NomNom/examples/csv/Target
