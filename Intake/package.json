@@ -20,10 +20,11 @@
 	"main": "./Target/Index.js",
 	"types": "./Target/Index.d.ts",
 	"scripts": {
+		"Document": "Document 'Source/**/*.ts'",
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"devDependencies": {
-		"@playform/build": "0.0.8"
+		"@playform/build": "0.0.9"
 	},
 	"publishConfig": {
 		"access": "public"

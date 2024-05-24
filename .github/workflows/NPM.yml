@@ -37,8 +37,7 @@ jobs:
               continue-on-error: true
               working-directory: ./Blur
               run: |
-                  npm install --include prod dev optional peer --legacy-peer-deps
-                  npm publish --legacy-peer-deps --provenance
+                  npm publish --legacy-peer-deps --provenance --ignore-scripts
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -46,8 +45,7 @@ jobs:
               continue-on-error: true
               working-directory: ./Intake
               run: |
-                  npm install --include prod dev optional peer --legacy-peer-deps
-                  npm publish --legacy-peer-deps --provenance
+                  npm publish --legacy-peer-deps --provenance --ignore-scripts
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -55,8 +53,7 @@ jobs:
               continue-on-error: true
               working-directory: ./Intake/packages/nomnom
               run: |
-                  npm install --include prod dev optional peer --legacy-peer-deps
-                  npm publish --legacy-peer-deps --provenance
+                  npm publish --legacy-peer-deps --provenance --ignore-scripts
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -64,8 +61,7 @@ jobs:
               continue-on-error: true
               working-directory: ./Intake/packages/parse
               run: |
-                  npm install --include prod dev optional peer --legacy-peer-deps
-                  npm publish --legacy-peer-deps --provenance
+                  npm publish --legacy-peer-deps --provenance --ignore-scripts
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -73,8 +69,7 @@ jobs:
               continue-on-error: true
               working-directory: ./Intake/packages/read
               run: |
-                  npm install --include prod dev optional peer --legacy-peer-deps
-                  npm publish --legacy-peer-deps --provenance
+                  npm publish --legacy-peer-deps --provenance --ignore-scripts
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
@@ -82,7 +77,6 @@ jobs:
               continue-on-error: true
               working-directory: ./NomNom/examples/csv
               run: |
-                  npm install --include prod dev optional peer --legacy-peer-deps
-                  npm publish --legacy-peer-deps --provenance
+                  npm publish --legacy-peer-deps --provenance --ignore-scripts
               env:
                   NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
