@@ -23,12 +23,10 @@
 		"nomnom": "Target/Bin.js"
 	},
 	"scripts": {
-		"Document": "Document 'Source/**/*.ts'",
 		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"devDependencies": {
-		"@playform/build": "0.0.9",
-		"@playform/document": "0.0.7"
+		"@playform/build": "0.0.9"
 	},
 	"publishConfig": {
 		"access": "public"
