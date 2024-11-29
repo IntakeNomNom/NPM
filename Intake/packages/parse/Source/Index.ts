@@ -13,6 +13,7 @@ export default async (data: string) => {
 		for (let i = 0; i < headers.length; i++) {
 			obj[headers[i]] = values[i];
 		}
+
 		return obj;
 	});
 
