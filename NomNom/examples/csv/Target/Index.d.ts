@@ -1,2 +1,2 @@
-declare const _default: any;
+declare const _default: Promise<any[]>;
 export default _default;
