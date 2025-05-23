@@ -2,19 +2,19 @@
 	"name": "@intakenomnom/examples-csv",
 	"version": "0.0.1",
 	"private": false,
-	"homepage": "HTTPS://GitHub.Com/IntakeNomNom/nomnom/examples/csv#readme",
+	"homepage": "https://GitHub.Com/IntakeNomNom/nomnom/examples/csv#readme",
 	"bugs": {
-		"url": "HTTPS://GitHub.Com/IntakeNomNom/nomnom/examples/csv/issues"
+		"url": "https://GitHub.Com/IntakeNomNom/nomnom/examples/csv/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+HTTPS://github.com/IntakeNomNom/nomnom/examples/csv.git"
+		"url": "git+https://github.com/IntakeNomNom/nomnom/examples/csv.git"
 	},
 	"license": "SEE LICENSE IN LICENSE",
 	"author": {
 		"name": "Source ✍🏻 Open 👐🏻",
 		"email": "Source/Open@PlayForm.LTD",
-		"url": "HTTPS://PlayForm.LTD"
+		"url": "https://PlayForm.LTD"
 	},
 	"type": "module",
 	"main": "./Target/Index.js",

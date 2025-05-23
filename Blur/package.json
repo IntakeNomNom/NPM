@@ -2,9 +2,9 @@
 	"name": "blur",
 	"version": "1.0.5",
 	"private": false,
-	"homepage": "HTTPS://GitHub.Com/IntakeNomNom/NPM#readme",
+	"homepage": "https://GitHub.Com/IntakeNomNom/NPM#readme",
 	"bugs": {
-		"url": "HTTPS://GitHub.Com/IntakeNomNom/NPM/issues"
+		"url": "https://GitHub.Com/IntakeNomNom/NPM/issues"
 	},
 	"repository": {
 		"type": "git",
@@ -14,7 +14,7 @@
 	"author": {
 		"name": "Source ✍🏻 Open 👐🏻",
 		"email": "Source/Open@Editor.Land",
-		"url": "HTTPS://Editor.Land"
+		"url": "https://Editor.Land"
 	},
 	"type": "module",
 	"main": "./Target/Index.js",

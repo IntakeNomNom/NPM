@@ -2,9 +2,9 @@
 	"name": "intake",
 	"version": "0.3.0",
 	"private": false,
-	"homepage": "HTTPS://GitHub.Com/IntakeNomNom/NPM#readme",
+	"homepage": "https://GitHub.Com/IntakeNomNom/NPM#readme",
 	"bugs": {
-		"url": "HTTPS://GitHub.Com/IntakeNomNom/NPM/issues"
+		"url": "https://GitHub.Com/IntakeNomNom/NPM/issues"
 	},
 	"repository": {
 		"type": "git",
@@ -14,7 +14,7 @@
 	"author": {
 		"name": "Source ✍🏻 Open 👐🏻",
 		"email": "Source/Open@PlayForm.LTD",
-		"url": "HTTPS://PlayForm.LTD"
+		"url": "https://PlayForm.LTD"
 	},
 	"type": "module",
 	"main": "./Target/Index.js",
