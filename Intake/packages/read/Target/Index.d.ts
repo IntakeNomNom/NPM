@@ -1,2 +1,2 @@
-declare const _default: (file: string) => Promise<any>;
+declare const _default: (file: string) => Promise<{}[]>;
 export default _default;
